@@ -3,9 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>chatbot</title>
+    <title>my project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#about" class="dropbtn">About <span class="caret">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="#team">Our Team</a>
+                        <a href="#history">Our History</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services <span class="caret">▼</span></a>
+                    <div class="dropdown-content">
+                        <a href="#webdesign">Web Design</a>
+                        <a href="#marketing">Marketing</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-icons">
+                <i class="fas fa-search"></i>
+                <div class="vertical-divider"></div>
+                <div class="account">
+                    <i class="fas fa-user"></i>
+                    <a href="#account">My Account</a>
+                </div>
+                <button class="login-btn">Login <i class="fas fa-sign-in-alt"></i></button>
+            </div>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileMenu()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+<!-- 
+    <main>
+        <section id="home">
+            <h1>Welcome to MyWebsite</h1>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+        </section>
+    </main> -->
+
+    <!-- Animated Card Section -->
+    <section class="animated-card-section">
+        <div class="card">
+            <div class="card-content">
+                <h2>Card 1</h2>
+                <p>This is an example of an animated card.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Card 2</h2>
+                <p>This is an example of an animated card.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Card 3</h2>
+                <p>This is an example of an animated card.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Card 4</h2>
+                <p>This is an example of an animated card.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>PRODUCT</h3>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Product Demo</a></li>
+                    <li><a href="#">Visual Builder</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>SOLUTIONS</h3>
+                <ul>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>INTEGRATIONS</h3>
+                <ul>
+                    <li><a href="#">Chat Widget</a></li>
+                    <li><a href="#">LiveChat</a></li>
+                    <li><a href="#">HelpDesk</a></li>
+                    <li><a href="#">Facebook Messenger</a></li>
+                    <li><a href="#">Slack</a></li>
+                    <li><a href="#">Zapier</a></li>
+                    <li><a href="#">WordPress</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">API & Developers</a></li>
+                    <li><a href="#">hatBot Academy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Chatbot Best Practices</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>COMPANY</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Partner Program</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">LiveChat Incubator</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MyWebsite. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById("mobile-menu");
+            if (menu.style.width === "0px" || menu.style.width === "") {
+                menu.style.width = "250px";
+            } else {
+                menu.style.width = "0";
+            }
+        }
+    </script>
 </body>
 </html>

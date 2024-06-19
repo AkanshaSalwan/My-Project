@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4; /* Light color theme */
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #333;
+    flex: 1; /* Allow logo to take available space */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align links vertically with the logo */
+    justify-content: center; /* Center links horizontally */
+    flex: 2; /* Ensure nav-links take more space */
+    margin: 0; /* Remove default margins */
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 1rem; /* Adjust margin as needed */
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links .caret {
+    font-size: 0.7rem;
+    margin-left: 0.2rem;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f4f4;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.nav-links .dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons i {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.vertical-divider {
+    width: 1px;
+    height: 24px;
+    background-color: #ccc;
+    margin: 0 1rem;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem; /* Adjust margin-right as needed */
+}
+
+.login-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem; /* Add margin-left to create space */
+}
+
+.login-btn i {
+    margin-left: 0.5rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.mobile-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+    color: #f1f1f1;
+}
+
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 0.5rem;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar-icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Your existing styles */
+...
+
+/* Styles for Animated Card Section */
+.animated-card-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem; /* Add margin for spacing between cards */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .animated-card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Full width for smaller screens */
+    }
+}
