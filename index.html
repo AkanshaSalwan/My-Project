@@ -101,49 +101,78 @@
         <a href="#contact">Contact</a>
     </div>
     <!-- mobile view end -->
-<!-- 
-    <main>
-        <section id="home">
-            <h1>Welcome to MyWebsite</h1>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-        </section>
-    </main> -->
+ 
+    <main class="main">
+        <h1>Integrating Shopify <i class="fa-brands fa-shopify"></i></h1>
+        
+    </main> 
 
     <!-- Animated Card Section -->
+     <!-- section 1 start -->
     <section class="animated-card-section">
         <div class="card">
             <div class="card-content">
-                <h2>Card 1</h2>
-                <p>This is an example of an animated card.</p>
+                <h2>Step 01</h2>
+                <h4>Access Shopify Theme Editor:</h4>
+                <li>Log in to your Shopify admin.</li>
+                <li>Navigate to Online Store Themes.</li>
+                
             </div>
         </div>
         <div class="card">
             <div class="card-content">
-                <h2>Card 2</h2>
-                <p>This is an example of an animated card.</p>
+                <h2>Step 02</h2>
+                <h4>Edit Theme Code :</h4>
+                <ul>
+                    <li>Click on the "Actions" dropdown for your active theme and select "Edit code."</li>
+                    <li>Upload JS File:</li>
+                    <li>Upload your loadChatbot.js file to your Shopify theme. You can place it in the "Assets" folder.</li>
+                    
+                  </ul>
             </div>
         </div>
         <div class="card">
             <div class="card-content">
-                <h2>Card 3</h2>
-                <p>This is an example of an animated card.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <h2>Card 4</h2>
-                <p>This is an example of an animated card.</p>
+                <h2>Step 03</h2>
+                <h4>Include JS in Theme:</h4>
+                <ul>
+                    <li>In the "Sections" or "Templates" folder (depending on your theme structure), locate the theme file (e.g., theme.liquid or footer.liquid) where you want to include your JavaScript file.</li>
+                    <li>Add the following code just before the closing &lt;/body&gt; tag:<br>
+                      <code>&lt;script src="{{ 'loadChatbot.js' | asset_url }}"&gt;&lt;/script&gt;</code><br>
+                      Replace loadChatbot.js with the actual name of your JavaScript file.</li>
+                  </ul>
             </div>
         </div>
     </section>
+    <!-- section 1 end -->
+     <!-- section 2 start -->
+    <section class="animated-card-section">
+        <div class="card">
+            <div class="card-content">
+                <h2>Step 04</h2>
+                <h4>Save Changes :</h4>
+                <p>Save the changes in the Shopify theme editor.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Step 05</h2>
+                <h4> Verify :</h4>
+                <ul>
+                    <li>Visit your Shopify store and open the browser's developer tools (usually by right-clicking and selecting "Inspect").</li>
+                    <li>Go to the "Console" tab and check for any errors. Ensure that your loadChatbot.js file is being loaded without errors.</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>Step 06</h2>
+                <h4>Test :</h4>
+                <p>Test the chat window functionality to ensure it appears as expected on your Shopify store.</p>
+            </div>
+        </div>  
+    </section>
+    <!-- section 2 end -->
 <!-- footer -->
 <footer>
     <div class="footer-container">
